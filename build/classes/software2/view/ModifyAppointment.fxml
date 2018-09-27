@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="535.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="software2.view.ModifyAppointmentController">
+   <children>
+      <Label fx:id="titleLabel" layoutX="59.0" layoutY="46.0" prefHeight="27.0" prefWidth="145.0" text="Title">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="titleTextField" layoutX="244.0" layoutY="47.0" promptText="Appointment Title" />
+      <Label fx:id="descriptionLabel" layoutX="59.0" layoutY="92.0" prefHeight="27.0" prefWidth="133.0" text="Description:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="descriptionTextField" layoutX="244.0" layoutY="93.0" promptText="Description" />
+      <TextField fx:id="locationTextField" layoutX="244.0" layoutY="139.0" promptText="Office" />
+      <Label fx:id="contactLabel" layoutX="59.0" layoutY="192.0" text="Contact:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="typeLabel" layoutX="59.0" layoutY="245.0" text="Type:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="startTimeLabel" layoutX="60.0" layoutY="353.0" text="Start Time:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="endTimeLabel" layoutX="63.0" layoutY="399.0" text="End Time:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="saveButton" layoutX="103.0" layoutY="459.0" mnemonicParsing="false" onAction="#saveButtonHandler" prefHeight="46.0" prefWidth="149.0" text="Save">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="contactComboBox" layoutX="244.0" layoutY="193.0" prefWidth="150.0" />
+      <ComboBox fx:id="typeComboBox" layoutX="244.0" layoutY="246.0" prefWidth="150.0" />
+      <Label fx:id="locationLabel" layoutX="59.0" layoutY="138.0" prefHeight="27.0" prefWidth="145.0" text="Location:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="startDateLabel" layoutX="60.0" layoutY="304.0" text="Date:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="startDatePicker" layoutX="232.0" layoutY="305.0" />
+      <ComboBox fx:id="startTimeHour" layoutX="232.0" layoutY="354.0" prefHeight="25.0" prefWidth="77.0" />
+      <ComboBox fx:id="startTimeMinutes" layoutX="329.0" layoutY="354.0" prefHeight="25.0" prefWidth="77.0" />
+      <ComboBox fx:id="endTimeHour" layoutX="232.0" layoutY="400.0" prefHeight="25.0" prefWidth="77.0" />
+      <ComboBox fx:id="endTimeMinutes" layoutX="329.0" layoutY="400.0" prefHeight="25.0" prefWidth="77.0" />
+      <Button fx:id="cancelButton" layoutX="353.0" layoutY="459.0" mnemonicParsing="false" onAction="#cancelButtonHandler" prefHeight="46.0" prefWidth="149.0" text="Cancel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
