@@ -1,14 +1,9 @@
 
 Logins
 
-You can use either 
+You can use the following to login
 
 Username: test
-password: password
-
-or 
-
-Username: David209
 password: password
 
 
